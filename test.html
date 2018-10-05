@@ -13,12 +13,10 @@
 
 <script>
 function myFunction() {
-    alert(JSON.stringify(window.appValues));
+    const msg = {state: {number: 123}};
+    postMessage('JSON.stringify(msg)', '*');
+    //postMessage('JSON.stringify(msg)', '*');
 };
- 
-$( document ).ready(function() {
-    myFunction();
-});
 </script>
 
 </body>

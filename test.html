@@ -12,10 +12,11 @@
 <button onclick="myFunction()">Try it</button>
 
 <script>
-function myFunction() {
     const msg = {state: {number: 123}};
     postMessage('JSON.stringify(msg)', '*');
-    //postMessage('JSON.stringify(msg)', '*');
+function myFunction() {
+
+    postMessage('finish-task', '*');
 };
 </script>
 

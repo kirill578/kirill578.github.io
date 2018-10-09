@@ -12,12 +12,13 @@
 <button onclick="myFunction()">Try it</button>
 
 <script>
-    const msg = {state: {number: 123}};
-    postMessage('JSON.stringify(msg)', '*');
-function myFunction() {
-
-    postMessage('finish-task', '*');
-};
+$(document).ready(function() {
+    if (!window.appValues) {
+        alert('website is not embeded');   
+    } else {
+        alert(window.appValues.user);
+    } 
+});
 </script>
 
 </body>

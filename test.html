@@ -12,11 +12,11 @@
 <button onclick="myFunction()">Try it</button>
 
 <script>
-$(document).ready(function() {
-    if (!window.appValues) {
+window.onAppValues = function(appValues) {
+    if (!appValues) {
         alert('website is not embeded');   
     } else {
-        alert(window.appValues.user);
+        alert(appValues.user);
     } 
 });
 </script>
